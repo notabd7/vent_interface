@@ -41,7 +41,8 @@ const EmailInterface = () => {
       
       // Configure email based on type
       let emailConfig = {
-        to: 'm.abdullah9122002@gmail.com',
+        to: 'rha35@drexel.edu',
+        //to: 'data@sbd.iridium.com',
         type: type
       };
 
@@ -50,8 +51,8 @@ const EmailInterface = () => {
         case 'open':
           emailConfig = {
             ...emailConfig,
-            subject: 'IMEI Number',
-            messageText: 'This is a test open email sent from the DevilDragon Vent!',
+            subject: '300534064701730',
+            messageText: '',
             attachmentInfo: {
               path: '../public/commands/011.sbd',
               name: '011.sbd'
@@ -61,22 +62,34 @@ const EmailInterface = () => {
         case 'close':
           emailConfig = {
             ...emailConfig,
-            subject: 'Close Command',
-            messageText: 'Close command email from DevilDragon Vent.'
+            subject: '300534064701730',
+            messageText: '',
+            attachmentInfo: {
+              path: '../public/commands/100.sbd',
+              name: '100.sbd'
+            }
           };
           break;
         case 'idle':
           emailConfig = {
             ...emailConfig,
-            subject: 'Idle Command',
-            messageText: 'Idle command email from DevilDragon Vent.'
+            subject: '300534064701730',
+            messageText: '',
+            attachmentInfo: {
+              path: '../public/commands/000.sbd',
+              name: '000.sbd'
+            }
           };
           break;
         case 'cutdown':
           emailConfig = {
             ...emailConfig,
-            subject: 'Cutdown Command',
-            messageText: 'Cutdown command email from DevilDragon Vent.'
+            subject: '300534064701730',
+            messageText: '',
+            attachmentInfo: {
+              path: '../public/commands/001.sbd',
+              name: '001.sbd'
+            }
           };
           break;
         default:
