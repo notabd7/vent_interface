@@ -41,8 +41,8 @@ const EmailInterface = () => {
       
       // Configure email based on type
       let emailConfig = {
-        to: 'rha35@drexel.edu',
-        //to: 'data@sbd.iridium.com',
+        //to: 'jrs595@drexel.edu',
+        to: 'data@sbd.iridium.com',
         type: type
       };
 
